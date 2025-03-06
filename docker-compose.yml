@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  dht22:
+    image: javi-jimenez/dht22_project:latest
+    build: .
+    ports:
+      - "8000:8000"
+    deploy:
+      replicas: 1
+      placement:
+        constraints: [node.hostname == raspi-io]
