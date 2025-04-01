@@ -10,7 +10,7 @@ docker-build:
 	docker buildx build --platform linux/arm/v6 --tag javi-jimenez/dht22_project:latest --progress plain --load .
 
 up:
-	docker service create dht22
-
+	# docker service create dht22 $(STACK_NAME)
+	docker stack deploy dht22 -c docker-compose.yml $(STACK_NAME)
 
 .PHONY: all
