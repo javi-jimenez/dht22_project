@@ -1,0 +1,5 @@
+BUILDPLATFORM=linux/arm/v6
+TARGETPLATFORM=linux/arm/v6
+BUILDER=multibuilder
+STACK_NAME=dht22_stack
+REGISTRY=javi-jimenez

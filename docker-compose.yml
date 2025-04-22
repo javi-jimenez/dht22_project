@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   dht22:
-    image: javi-jimenez/dht22_project:latest
+    image: $REGISTRY/gitea/dht22_project:latest
     build: .
     ports:
       - "8000:8000"
