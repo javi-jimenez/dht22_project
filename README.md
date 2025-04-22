@@ -11,7 +11,7 @@ This project reads temperature and humidity data from a DHT22 sensor on a Raspbe
 
 ## Setup & Deployment
 
-Run `make`.
+Run `make`
 
 ## License
 This project is licensed under the MIT License.
